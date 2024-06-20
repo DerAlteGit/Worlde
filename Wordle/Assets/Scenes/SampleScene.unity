@@ -2004,6 +2004,7 @@ GameObject:
   - component: {fileID: 519420035}
   - component: {fileID: 519420036}
   - component: {fileID: 519420037}
+  - component: {fileID: 519420038}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2177,7 +2178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e661e4238c472e64b9cef3e8cd84add9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textAsset: {fileID: 4900000, guid: 55cac25ce6252794db01dbe713d2a95f, type: 3}
+  _textAsset: {fileID: 4900000, guid: 15778c7c787f37c4e9716427c1c6dca7, type: 3}
 --- !u!114 &519420036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2214,6 +2215,33 @@ MonoBehaviour:
   - {fileID: 2070657002}
   - {fileID: 1823257113}
   - {fileID: 734313592}
+--- !u!114 &519420038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f3095602b711444690762d0d70fda6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerPref: {fileID: 5328032177836002582, guid: 1e714b190ca25534b89d67295b69f37c, type: 3}
+  background: {fileID: 1419375970}
+  wordsBackground: {fileID: 1237724949}
+  keyboardBackground: {fileID: 971378300}
+  charButton: {fileID: 3207533501555367298, guid: ad60e93ae816e4348b8af1a67cc32988, type: 3}
+  charPlace: {fileID: 7949701477878877228, guid: a6ca5e1bfef972e4eb5bb89ab067b31e, type: 3}
+  panels:
+  - {fileID: 744568542}
+  - {fileID: 1794880492}
+  - {fileID: 960883750}
+  buttons:
+  - {fileID: 1453327195}
+  - {fileID: 410064450}
+  - {fileID: 111133605}
+  - {fileID: 1683627861}
 --- !u!224 &534024864 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3424722185590470815, guid: ad60e93ae816e4348b8af1a67cc32988, type: 3}
@@ -4355,7 +4383,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 2
 --- !u!222 &971378301
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5745,7 +5773,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 2
 --- !u!222 &1237724950
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7846,7 +7874,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 24.0414, y: 11.8462}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1419375970
 MonoBehaviour:
@@ -7868,7 +7896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c4225712f961ec841bf6731cedf742fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 927a76251df425e4b9df9e1c93718930, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10826,6 +10854,7 @@ MonoBehaviour:
   wordText: {fileID: 1167643984}
   timeText: {fileID: 1664328981}
   recordText: {fileID: 1028930833}
+  rewardMoney: 0
 --- !u!114 &1794880492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10855,7 +10884,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 1.5
 --- !u!222 &1794880493
 CanvasRenderer:
   m_ObjectHideFlags: 0

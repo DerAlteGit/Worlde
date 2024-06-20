@@ -12,10 +12,12 @@ public class WinPanel : Panel
     [SerializeField] private Text wordText;
     [SerializeField] private Text timeText;
     [SerializeField] private Text recordText;
+    [SerializeField] private int rewardMoney;
     public override void Init()
     {
         wordText.text = word;
         timeText.text = time.ToString()  + " сек.";
         recordText.text = recordTime.ToString() + " сек.";
+        PlayerPrefs.SetInt("Money", PlayerPrefs.GetInt("Money") + rewardMoney);
     }
 }

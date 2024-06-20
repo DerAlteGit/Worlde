@@ -14,9 +14,9 @@ public class CharButton : MonoBehaviour
     public CharState state;
     [SerializeField] private Text text;
     [SerializeField]private Image spriteRenderer;
-    [SerializeField] private Sprite green;
-    [SerializeField] private Sprite yellow;
-    [SerializeField] private Sprite white;
+    [SerializeField] public Sprite green;
+    [SerializeField] public Sprite yellow;
+    [SerializeField] public Sprite white;
     private void Start()
     {
         StyleController controller = FindObjectOfType<StyleController>();

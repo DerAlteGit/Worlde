@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 62961
+  controlID: 36782
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -87,7 +87,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 62962
+  controlID: 36783
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 62963
+  controlID: 36784
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,9 +226,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c6cafeff
-      m_LastClickedID: -79162
-      m_ExpandedIDs: c4cafeff1ee3fefff6fdfeffb803ffff7809ffffda12ffffd213ffffec14ffff2615ffff0c1affff101affff601dffff0240ffffda5fffffe069ffffe26dffffea6effff326fffff1c70ffff6470ffff3475ffff3875ffff6e78ffff2a8dffff0695ffff0a95ffffeeadffffe4afffffc4c2ffff84e9fffff2edffff1ef9ffff26fbffff445d0000a05d00003a5e0000f0f60000aaf80000482401006c240100962401000425010028250100382501004025010068250100002601001026010076260100ac2601007039010096390100e2440100
+      m_SelectedIDs: a4570100
+      m_LastClickedID: 0
+      m_ExpandedIDs: 8895feffcc96feffae9afeff58d5feff7ae5feff1aeffeffdef8feff3c07ffff700dffffce11ffffb415ffff3c1fffffa424ffff4629ffff1832ffffa236ffff4c42ffff9c42ffff904effff0a93ffff1294ffff1a99ffff0e9effffaaa5ffffbca9ffff08b2ffff2af9ffff26fbfffff4ffffff585d0000985d0000a85d0000e25d0000fc5d0000125e00001c5e0000385e0000048500004a9300006e9a0000be9a0000d89a0000549b00005e9b00007c9b00002ec3000032d9000044dc0000e8e7000060110100b0110100ca110100321201005812010082120100aa1f0100642b0100be480100827b0100ac7b0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -560,9 +560,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 523.0229, y: 45.05133, z: 3.3098063}
+    m_Target: {x: 486.90952, y: 291.1666, z: 4.699196}
     speed: 2
-    m_Value: {x: 525.26306, y: 45.141975, z: 3.2749734}
+    m_Value: {x: 486.90952, y: 291.1666, z: 4.699196}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -613,9 +613,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 73.92353
+    m_Target: 322.66376
     speed: 2
-    m_Value: 77.40684
+    m_Value: 322.66376
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -707,24 +707,24 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 0
+    m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/StylesSprites
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/StylesSprites
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: I:\APPS\UNity\Wordle
+  m_LastProjectPath: I:\APPS\UNity\Worlde\Wordle
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e45f0000
-    m_LastClickedID: 24548
-    m_ExpandedIDs: 00000000e45f000000ca9a3bffffff7f
+    m_SelectedIDs: 98570100
+    m_LastClickedID: 87960
+    m_ExpandedIDs: 000000009c5e00009857010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -752,7 +752,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e45f000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000009c5e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -777,9 +777,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: c6cafeff
-    m_LastClickedInstanceID: -79162
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: a4570100
+    m_LastClickedInstanceID: 87972
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000e49e000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -899,7 +899,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 158
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
