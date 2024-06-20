@@ -18,6 +18,7 @@ public class WinPanel : Panel
         wordText.text = word;
         timeText.text = time.ToString()  + " сек.";
         recordText.text = recordTime.ToString() + " сек.";
+        PlayerPrefs.SetInt("PreviousMoney", PlayerPrefs.GetInt("Money"));
         PlayerPrefs.SetInt("Money", PlayerPrefs.GetInt("Money") + rewardMoney);
     }
 }

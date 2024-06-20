@@ -8,7 +8,9 @@ using UnityEngine.UI;
 public class PlayerMoney : MonoBehaviour
 {
     public static event Action onChange;
-    [SerializeField]private Text moneyText;
+    [SerializeField]private List<Text> moneyTexts;
+    //[SerializeField] private Text animationText;
+    //public Animator animator;
     [field:SerializeField]public int money { get; private set; }
     private void Start()
     {
@@ -16,25 +18,34 @@ public class PlayerMoney : MonoBehaviour
     }
     public void Init()
     {
-        onChange += () =>
-        {
-            PlayerPrefs.SetInt("Money", money);
-            moneyText.text = money.ToString();
-        };
+        money = PlayerPrefs.GetInt("Money");
+        
+        
+            UpdateMoney();
+        
     }
+
   /* public void AddMoney(int money)
     {
         PlayerMoney.money = money;
         onChange?.Invoke();
     }*/
+    public void UpdateMoney()
+    {
+        foreach(var moneyText in moneyTexts)moneyText.text = money.ToString();
+        money = PlayerPrefs.GetInt("Money");
+        
+    }
     public bool SpendMoney(int money)
     {
+        UpdateMoney();
         if(this.money >= money)
         {
             this.money -= money;
-            onChange?.Invoke();
+            UpdateMoney();
             return true;
         }
+        UpdateMoney();
         return false;
     }
 }

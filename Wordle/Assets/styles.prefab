@@ -48,5 +48,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9fe921f55ce1ddd4f95bc8c4ce350b5c, type: 2}
   - {fileID: 11400000, guid: dc75b5100cd54d54b8bdb83cbb9b49b1, type: 2}
   - {fileID: 11400000, guid: 4dd1561f6f46e824f8d21e792545d9f2, type: 2}
+  - {fileID: 11400000, guid: 81bdeef9c5a76454689907ff908b3256, type: 2}
   <currentStyle>k__BackingField: {fileID: 0}
   currentGameStyle: {fileID: 0}

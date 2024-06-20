@@ -13,6 +13,8 @@ public class Shop : MonoBehaviour
     [SerializeField] private Button buyButton;
     [SerializeField] private Button chouseButton;
     [SerializeField] private PlayerMoney money;
+    [SerializeField] private GameObject rightButton;
+    [SerializeField]private GameObject leftButton;
     private int currentIndex;
     private void Start()
     {
@@ -31,11 +33,13 @@ public class Shop : MonoBehaviour
         if(currentIndex + 1 < styleController.styles.Count)
         {
             currentIndex++;
+            
         }
-        else
+        if(currentIndex + 1 >= styleController.styles.Count)
         {
-            currentIndex = 0;
+            rightButton.SetActive(false);
         }
+        leftButton.SetActive(true);
         UpdateUI();
     }
     public void Previous()
@@ -44,11 +48,11 @@ public class Shop : MonoBehaviour
         {
             currentIndex--;
         }
-        else
+        if(currentIndex == 0)
         {
-            currentIndex = styleController.styles.Count - 1;
+            leftButton.SetActive(false);
         }
-
+        rightButton.SetActive(true);
         UpdateUI();
     }
     public void Choose()
@@ -66,6 +70,8 @@ public class Shop : MonoBehaviour
     }
     public void UpdateUI()
     {
+        if (currentIndex == styleController.styles.Count - 1) rightButton.SetActive(false);
+        if (currentIndex == 0) leftButton.SetActive(false);
         moneyText.text = PlayerPrefs.GetInt("Money").ToString();
         if (!styleController.styles[currentIndex].isBought)
         {

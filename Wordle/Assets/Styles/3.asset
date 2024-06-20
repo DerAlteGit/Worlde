@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109a4de96a5cc81469347698aa3dd49f, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
-  <fontColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
-  isBought: 0
-  <cost>k__BackingField: 0
-  <charButtonDefault>k__BackingField: {fileID: 0}
-  <charButtonGreen>k__BackingField: {fileID: 0}
-  <charButtonYellow>k__BackingField: {fileID: 0}
-  <charButtonGray>k__BackingField: {fileID: 0}
-  <background>k__BackingField: {fileID: 0}
-  <menuBackground>k__BackingField: {fileID: 0}
-  <keyboardBackground>k__BackingField: {fileID: 0}
+  <fontColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  <buttonsTextColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
+  isBought: 1
+  <cost>k__BackingField: 1500
+  <charButtonDefault>k__BackingField: {fileID: 21300000, guid: d14ffbc584f7eb345bf23e145d0a72a2, type: 3}
+  <charButtonGreen>k__BackingField: {fileID: 21300000, guid: 9075fb00a4e00e4458e605f00c184cd5, type: 3}
+  <charButtonYellow>k__BackingField: {fileID: 21300000, guid: 24d81dec213906e45b879040f7efb399, type: 3}
+  <charButtonGray>k__BackingField: {fileID: 21300000, guid: ee116e797e5756b4f87f97dc5331b073, type: 3}
+  <background>k__BackingField: {fileID: 21300000, guid: 0eeee23a10e03014282587ea3e951534, type: 3}
+  <menuBackground>k__BackingField: {fileID: 21300000, guid: 111549d8c102046498438990a889e1aa, type: 3}
+  <keyboardBackground>k__BackingField: {fileID: 21300000, guid: 111549d8c102046498438990a889e1aa, type: 3}
+  <menuButton>k__BackingField: {fileID: 21300000, guid: ebddb42da1130534c889b329e15236e3, type: 3}
