@@ -14,9 +14,11 @@ public class UnlockLine : MonoBehaviour
     private void Start()
     {
         Lock();
+        
     }
     public void Lock()
     {
+        //CacheSave.SaveChainState(false);
         onLock?.Invoke();
         lockSprite.SetActive(true);
         isLocked = true;
@@ -27,8 +29,13 @@ public class UnlockLine : MonoBehaviour
         }
     }
     
+    public void UnlockClick()
+    {
+        Ads.ShowRewardedForUnlock();
+    }
     public void Unlock()
     {
+        //CacheSave.SaveChainState(true);
         onUnlock?.Invoke();
         lockSprite.SetActive(false);
         isLocked = false;

@@ -17,7 +17,15 @@ public class EnterWord : MonoBehaviour
         NewWord();
         FindObjectOfType<UnlockLine>().onUnlock += () => maxRow = 5;
         FindObjectOfType<UnlockLine>().onLock += () => maxRow = 4;
-        
+       /* string[] symbols = CacheSave.GetSymbols();
+        foreach (var item in symbols)
+        {
+            if(item != null && item != "")
+            {
+                EnterSymbol(item);
+            }
+        }*/
+
     }
     public void NewWord()
     {

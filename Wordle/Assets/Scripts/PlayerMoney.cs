@@ -9,6 +9,7 @@ public class PlayerMoney : MonoBehaviour
 {
     public static event Action onChange;
     [SerializeField]private List<Text> moneyTexts;
+    [SerializeField] private int AdReward = 200;
     //[SerializeField] private Text animationText;
     //public Animator animator;
     [field:SerializeField]public int money { get; private set; }
@@ -24,7 +25,15 @@ public class PlayerMoney : MonoBehaviour
             UpdateMoney();
         
     }
-
+    public void RewardClick()
+    {
+        Ads.ShowRewardedForMoney();
+    }
+    public void ClaimReward()
+    {
+        PlayerPrefs.SetInt("Money", PlayerPrefs.GetInt("Money") + 200);
+        UpdateMoney();
+    }
   /* public void AddMoney(int money)
     {
         PlayerMoney.money = money;

@@ -23,25 +23,35 @@ public class MusicController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
    
     }
-    public void ChangeSound()
+    public void SoundOff()
     {
         AudioSource[] audios = FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
-        if(soundButton.sprite == soundOff)
-        {
-            soundButton.sprite = soundOn;
-            foreach (var item in audios)
-            {
-                item.mute = false;
-                PlayerPrefs.SetInt("Music", 1);
-            }
-            return;
-        }
         foreach (var item in audios)
         {
             item.mute = true;
             PlayerPrefs.SetInt("Music", 0);
         }
         soundButton.sprite = soundOff;
+    }
+    public void SoundOn()
+    {
+        AudioSource[] audios = FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
+        soundButton.sprite = soundOn;
+        foreach (var item in audios)
+        {
+            item.mute = false;
+            PlayerPrefs.SetInt("Music", 1);
+        }
+    }
+    public void ChangeSound()
+    {
+        AudioSource[] audios = FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
+        if(soundButton.sprite == soundOff)
+        {
+           SoundOn();
+            return;
+        }
+        SoundOff();
     }
    
 }
